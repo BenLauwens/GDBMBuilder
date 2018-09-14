@@ -1,4 +1,3 @@
-```
 language: julia
 os:
   - linux
@@ -26,4 +25,13 @@ before_script:
 script:
   - julia build_tarballs.jl
 
-```
+deploy:
+  provider: releases
+  api_key:
+    secure: 50bc1a0aa968fecacf4f8af7aead91b5672841a9
+  file_glob: true
+  file: products/*
+  skip_cleanup: true
+  on:
+    repo: staticfloat/NettleBuilder
+    tags: true
