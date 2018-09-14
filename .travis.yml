@@ -33,5 +33,5 @@ deploy:
   file: products/*
   skip_cleanup: true
   on:
-    repo: staticfloat/NettleBuilder
+    repo: BenLauwens/GDBMBuilder
     tags: true
