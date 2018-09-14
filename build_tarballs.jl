@@ -21,9 +21,10 @@ cd $WORKSPACE/srcdir
 cd gdbm-1.18/
 if [ $target = "x86_64-w64-mingw32" ] || [ $target = "i686-w64-mingw32" ]; then
 patch -Np1 -i ../*gdbm-1.15-win32.patch
-touch configure.ac Makefile.am
+touch configure.ac
 fi
 ./configure --prefix=$prefix --host=$target --without-readline --disable-dependency-tracking --disable-silent-rules
+touch Makefile.am
 make
 make install
 exit

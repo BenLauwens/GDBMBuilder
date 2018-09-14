@@ -28,7 +28,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: 50bc1a0aa968fecacf4f8af7aead91b5672841a9
+    secure: 90b95f284057ab74e8707e82eeab3baf29db04ab
   file_glob: true
   file: products/*
   skip_cleanup: true
