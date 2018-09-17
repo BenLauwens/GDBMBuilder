@@ -1,6 +1,6 @@
 language: julia
 os:
-- osx
+- linux
 julia:
 - 0.7
 notifications:
@@ -20,7 +20,6 @@ before_script:
 - julia -e 'Pkg.clone("https://github.com/JuliaPackaging/BinaryProvider.jl")'
 - julia -e 'Pkg.clone("https://github.com/JuliaPackaging/BinaryBuilder.jl"); Pkg.build()'
 script:
-- export LD_LIBRARY_PATH=~/.julia/dev/BinaryBuilder/deps/qemu/lib
 - julia build_tarballs.jl
 deploy:
   provider: releases
