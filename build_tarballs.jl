@@ -52,7 +52,7 @@ platforms = [
     MacOS(:x86_64),
     FreeBSD(:x86_64),
 #    Windows(:i686),
-    Windows(:x86_64)
+#    Windows(:x86_64)
 ]
 
 # The products that we will ensure are always built
