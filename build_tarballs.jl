@@ -2,8 +2,8 @@
 # `julia build_tarballs.jl --help` to see a usage message.
 using BinaryBuilder
 
-name = "GDBMBuilder"
-version = v"0.1.0"
+name = "GDBM"
+version = v"1.18"
 
 # Collection of sources required to build GDBMBuilder
 sources = [
